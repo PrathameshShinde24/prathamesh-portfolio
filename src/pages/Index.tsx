@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
@@ -34,31 +33,33 @@ const Index = () => {
     <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark' : ''}`}>
       <Navigation />
       <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-      
-      <section id="hero">
-        <Hero />
-      </section>
-      
-      <section id="about">
-        <About />
-      </section>
-      
-      <section id="skills">
-        <Skills />
-      </section>
-      
-      <section id="projects">
-        <Projects />
-      </section>
-      
-      <section id="education">
-        <Education />
-      </section>
-      
-      <section id="contact">
-        <Contact />
-      </section>
-      
+
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="hero" className="py-10 sm:py-16 md:py-20">
+          <Hero />
+        </section>
+
+        <section id="about" className="py-10 sm:py-16 md:py-20">
+          <About />
+        </section>
+
+        <section id="skills" className="py-10 sm:py-16 md:py-20">
+          <Skills />
+        </section>
+
+        <section id="projects" className="py-10 sm:py-16 md:py-20">
+          <Projects />
+        </section>
+
+        <section id="education" className="py-10 sm:py-16 md:py-20">
+          <Education />
+        </section>
+
+        <section id="contact" className="py-10 sm:py-16 md:py-20">
+          <Contact />
+        </section>
+      </main>
+
       <Footer />
       <ScrollToTop />
     </div>
